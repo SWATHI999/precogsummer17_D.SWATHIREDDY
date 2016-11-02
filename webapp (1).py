@@ -10,7 +10,7 @@ app.config['MONGO_URI']='mongodb://swathi:swateja@ds031257.mlab.com:31257/precog
 
 mongo=PyMongo(app)
 
-@app.route('/')
+@app.route('/https://precogtweetstask.herokuapp.com/')
 def add():
 	user=mongo.db.precog_collection
 	output=user.find()
